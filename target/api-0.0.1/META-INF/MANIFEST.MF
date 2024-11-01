@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Created-By: IntelliJ IDEA
+Built-By: rodrigo.lacan
+Build-Jdk: 21.0.4
+Implementation-Title: api
+Implementation-Version: 0.0.1
+Implementation-Vendor-Id: rr.sebrae
+Main-Class: ${start-class}
+
