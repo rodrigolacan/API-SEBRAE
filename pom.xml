@@ -33,32 +33,20 @@
 	</properties>
 	<profiles>
 		<profile>
-			<id>deploy-wildfly</id>
+			<id>dev</id>
 			<build>
-				<finalName>api-sebrae</finalName>
-				<plugins>
-					<plugin>
-						<groupId>org.wildfly.plugins</groupId>
-						<artifactId>wildfly-maven-plugin</artifactId>
-						<version>5.0.0.Final</version>
-						<configuration>
-							<hostname>localhost</hostname>
-							<port>9990</port>
-							<username></username>
-							<password></password>
-						</configuration>
-						<executions>
-							<execution>
-								<phase>package</phase>
-								<goals>
-									<goal>deploy</goal>
-								</goals>
-							</execution>
-						</executions>
-					</plugin>
-				</plugins>
+				<finalName>sebrae-dev</finalName>
+
 			</build>
 		</profile>
+		<profile>
+			<id>prod</id>
+			<build>
+				<finalName>sebrae</finalName>
+
+			</build>
+		</profile>
+
 	</profiles>
 
 	<dependencies>
